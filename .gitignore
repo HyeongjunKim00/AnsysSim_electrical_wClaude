@@ -1,0 +1,43 @@
+# ── Ansys AEDT (HFSS / Icepak / SIwave) ──────────────────────────
+# 락 / 임시 / 백업 파일
+*.lock
+*.aedt.lock
+*.aedt.auto
+*.aedt.bak
+*.aedttz
+*.batchinfo/
+*.asol
+*.adsn
+*.mntr
+*.crash*
+
+# 솔루션 결과 폴더 (대용량 — 재계산 가능)
+*.aedtresults/
+*.pyaedt
+*.exportgds
+*.ansys
+pyaedt*.log
+*.log
+
+# EDB 캐시/결과 (레이아웃 원본 .aedb 폴더 자체는 유지)
+*.aedb/*.log
+*.aedb/*.lock
+
+# 프로젝트별 결과 산출물 (S-param, 온도맵, 플롯 등 대용량)
+projects/*/results/**
+!projects/*/results/.gitkeep
+!projects/*/results/**/*.md
+
+# ── Python / PyAEDT 환경 ─────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# ── OS / 에디터 ──────────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
